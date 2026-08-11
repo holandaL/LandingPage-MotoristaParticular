@@ -23,7 +23,7 @@ export function Footer() {
             Transporte particular, aeroporto, shows, eventos, passeios, viagens e compromissos executivos em Fortaleza e região.
           </p>
           <p className="mt-4 inline-flex items-start gap-2 text-sm text-white/75">
-            <ShieldCheck className="mt-0.5 h-4 w-4 flex-none text-gold" aria-hidden />
+            <ShieldCheck className="mt-0.5 h-4 w-4 flex-none text-brandBlue" aria-hidden />
             Caso Sampaio esteja dirigindo, sua mensagem poderá não ser respondida imediatamente. Assim que estiver parado e disponível,
             ele retornará o contato.
           </p>

@@ -1,12 +1,11 @@
 import { ChevronRight, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import sampaioPhoto from '@/assets/sampaio-driver.jpg';
 
 const navItems = [
   { label: 'Início', href: '#inicio' },
   { label: 'Serviços', href: '#servicos' },
-  { label: 'Como funciona', href: '#como-funciona' },
-  { label: 'Avaliações', href: '#avaliacoes' },
-  { label: 'Sobre', href: '#sobre' }
+  { label: 'Avaliações', href: '#avaliacoes' }
 ];
 
 export function Header() {
@@ -16,7 +15,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 text-white">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-7 lg:px-10" aria-label="Menu principal">
         <a href="#inicio" className="flex items-center gap-3 rounded-md focus:outline-none focus:ring-2 focus:ring-brandBlue">
-          <span className="brand-mark">S</span>
+          <img src={sampaioPhoto} alt="Foto de Sampaio" className="brand-photo" />
           <span>
             <span className="block text-xl font-black leading-5">SAMPAIO</span>
             <span className="block text-[0.65rem] font-semibold uppercase text-white/70">Motorista particular</span>

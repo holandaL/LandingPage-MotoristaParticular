@@ -7,8 +7,7 @@ import {
   Send,
   ShieldCheck,
   Sparkles,
-  UserRound,
-  Wifi
+  UserRound
 } from 'lucide-react';
 import { FormEvent, useEffect, useMemo, useState } from 'react';
 import { z } from 'zod';
@@ -67,7 +66,7 @@ const serviceCards = [
 const bottomBenefits = [
   { title: 'Atendimento Personalizado', icon: UserRound },
   { title: 'Carro Higienizado e Confortável', icon: Sparkles },
-  { title: 'Ar-condicionado e Wi-Fi', icon: Wifi },
+  { title: 'Ar-condicionado Sempre Ligado', icon: ShieldCheck },
   { title: 'Veículo 2026 Fiat Argo', icon: Car },
   { title: 'Pagamento Seguro e Transparente', icon: ShieldCheck }
 ];

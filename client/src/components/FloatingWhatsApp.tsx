@@ -17,7 +17,7 @@ export function FloatingWhatsApp() {
   return (
     <button
       type="button"
-      className="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#1fa855] text-white shadow-2xl shadow-black/25 transition hover:-translate-y-1 hover:bg-[#168f47] focus:outline-none focus:ring-4 focus:ring-[#1fa855]/25"
+      className="fixed bottom-5 right-5 z-40 grid h-14 w-14 place-items-center rounded-full bg-brandBlue text-white shadow-2xl shadow-brandBlue/30 transition hover:-translate-y-1 hover:bg-[#1647ee] focus:outline-none focus:ring-4 focus:ring-brandBlue/25"
       onClick={handleClick}
       aria-label="Falar com Sampaio pelo WhatsApp"
       title="Falar com Sampaio pelo WhatsApp"

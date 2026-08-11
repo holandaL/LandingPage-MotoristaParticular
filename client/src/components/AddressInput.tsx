@@ -74,7 +74,7 @@ export function AddressInput({ id, label, value, placeholder, error, onChange }:
     <div className="field">
       <label htmlFor={id}>{label}</label>
       <div className="relative">
-        <MapPin className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-pine/60" aria-hidden />
+        <MapPin className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-brandBlue/70" aria-hidden />
         <input
           id={id}
           className={`input pl-10 ${error ? 'input-error' : ''}`}
@@ -84,7 +84,7 @@ export function AddressInput({ id, label, value, placeholder, error, onChange }:
           onFocus={() => setOpen(suggestions.length > 0)}
           autoComplete="street-address"
         />
-        {loading ? <Loader2 className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-pine" aria-hidden /> : null}
+        {loading ? <Loader2 className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 animate-spin text-brandBlue" aria-hidden /> : null}
         {open ? (
           <div className="suggestion-panel" role="listbox">
             {suggestions.map((suggestion) => (

@@ -69,7 +69,7 @@
   }
 
   .section-heading p {
-    @apply text-sm font-black uppercase text-coral;
+    @apply text-sm font-black uppercase text-brandBlue;
   }
 
   .section-heading h2 {
@@ -85,11 +85,11 @@
   }
 
   .btn-secondary {
-    @apply border border-pine/20 bg-white text-pine hover:border-pine/40 hover:bg-tealsoft focus:outline-none focus:ring-4 focus:ring-pine/20;
+    @apply border border-brandBlue/25 bg-white text-brandBlue hover:border-brandBlue/50 hover:bg-white focus:outline-none focus:ring-4 focus:ring-brandBlue/20;
   }
 
   .btn-light {
-    @apply bg-white text-pine hover:-translate-y-0.5 hover:bg-tealsoft focus:outline-none focus:ring-4 focus:ring-white/30;
+    @apply bg-white text-brandBlue hover:-translate-y-0.5 hover:bg-white/90 focus:outline-none focus:ring-4 focus:ring-white/30;
   }
 
   .btn-glass {
@@ -106,7 +106,7 @@
   }
 
   .mobile-nav-link {
-    @apply rounded-md px-3 py-3 text-base font-semibold text-white/80 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-gold;
+    @apply rounded-md px-3 py-3 text-base font-semibold text-white/80 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-brandBlue;
   }
 
   .request-form {
@@ -127,11 +127,11 @@
   }
 
   .input-error {
-    @apply border-red-500 focus:border-red-500 focus:ring-red-100;
+    @apply border-brandBlue focus:border-brandBlue focus:ring-brandBlue/20;
   }
 
   .error-text {
-    @apply text-sm font-semibold text-red-600;
+    @apply text-sm font-semibold text-white;
   }
 
   .helper {
@@ -179,7 +179,7 @@
   }
 
   .icon-button {
-    @apply grid h-10 w-10 place-items-center rounded-md text-ink/70 transition hover:bg-pine/10 hover:text-ink focus:outline-none focus:ring-4 focus:ring-pine/20;
+    @apply grid h-10 w-10 place-items-center rounded-md text-ink/70 transition hover:bg-brandBlue/10 hover:text-ink focus:outline-none focus:ring-4 focus:ring-brandBlue/20;
   }
 
   .toast {
@@ -195,7 +195,7 @@
   }
 
   .toast-info {
-    @apply border-pine/20 text-ink;
+    @apply border-brandBlue/20 text-ink;
   }
 
   .hero-kicker {
@@ -223,8 +223,8 @@
     @apply border-y border-ink/10 bg-ink text-white;
   }
 
-  .brand-mark {
-    @apply grid h-10 w-10 place-items-center rounded-md bg-brandBlue text-xl font-black text-white shadow-lg shadow-brandBlue/30;
+  .brand-photo {
+    @apply h-11 w-11 rounded-full border-2 border-brandBlue object-cover shadow-lg shadow-brandBlue/30;
   }
 
   .hero-stats {

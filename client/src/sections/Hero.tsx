@@ -77,7 +77,7 @@ export function Hero() {
             <div>
               <p className="text-2xl font-black leading-6">Sampaio</p>
               <p className="mt-1 text-sm font-semibold text-[#5d8dff]">Motorista Particular</p>
-              <div className="mt-2 flex items-center gap-1 text-gold" aria-label="5 estrelas">
+              <div className="mt-2 flex items-center gap-1 text-brandBlue" aria-label="5 estrelas">
                 {Array.from({ length: 5 }).map((_, index) => (
                   <Star key={index} className="h-4 w-4 fill-current" aria-hidden />
                 ))}
