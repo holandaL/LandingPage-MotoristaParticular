@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum RideStatus {
+  NEW
+  WAITING
+  CONTACTED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+model RideRequest {
+  id                   String     @id @default(uuid()) @db.Uuid
+  publicId             String     @unique @map("public_id") @db.VarChar(32)
+  customerName         String     @map("customer_name") @db.VarChar(120)
+  customerPhone        String?    @map("customer_phone") @db.VarChar(30)
+  origin               String     @db.VarChar(240)
+  originLatitude       Decimal?   @map("origin_latitude") @db.Decimal(10, 7)
+  originLongitude      Decimal?   @map("origin_longitude") @db.Decimal(10, 7)
+  destination          String     @db.VarChar(240)
+  destinationLatitude  Decimal?   @map("destination_latitude") @db.Decimal(10, 7)
+  destinationLongitude Decimal?   @map("destination_longitude") @db.Decimal(10, 7)
+  rideDate             DateTime   @map("ride_date") @db.Date
+  rideTime             String     @map("ride_time") @db.VarChar(5)
+  passengers           Int
+  luggage              String     @db.VarChar(20)
+  rideType             String     @map("ride_type") @db.VarChar(40)
+  notes                String?
+  estimatedDistance    String?    @map("estimated_distance") @db.VarChar(80)
+  estimatedDuration    String?    @map("estimated_duration") @db.VarChar(80)
+  estimatedPrice       String?    @map("estimated_price") @db.VarChar(80)
+  status               RideStatus @default(NEW)
+  whatsappOpened       Boolean    @default(false) @map("whatsapp_opened")
+  whatsappOpenedAt     DateTime?  @map("whatsapp_opened_at")
+  createdAt            DateTime   @default(now()) @map("created_at")
+  updatedAt            DateTime   @updatedAt @map("updated_at")
+
+  @@index([publicId])
+  @@index([status, createdAt])
+  @@index([rideDate])
+  @@map("ride_requests")
+}
