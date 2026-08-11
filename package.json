@@ -9,6 +9,7 @@
     "dev:server": "tsx watch server/src/server.ts",
     "build": "npm run build:server && npm run build:client",
     "build:client": "vite build --config client/vite.config.ts",
+    "build:netlify": "npm run build:client",
     "build:server": "tsc -p server/tsconfig.json",
     "start": "node server/dist/server/src/server.js",
     "db:generate": "prisma generate",

@@ -1,4 +1,5 @@
-import { Car, CheckCircle2, ImagePlus, Star } from 'lucide-react';
+import { Car, CheckCircle2, Star } from 'lucide-react';
+import sampaioPhoto from '@/assets/sampaio-driver.jpg';
 import { benefits, reviews, services, steps } from '@/data/content';
 
 export function ServicesSection() {
@@ -98,10 +99,13 @@ export function AboutSection() {
             ))}
           </div>
         </div>
-        <div className="photo-placeholder">
-          <ImagePlus className="h-9 w-9 text-pine" aria-hidden />
-          <p>Área preparada para fotografia real de Sampaio.</p>
-        </div>
+        <figure className="driver-about-card">
+          <img src={sampaioPhoto} alt="Foto do motorista Sampaio" className="driver-about-photo" loading="lazy" decoding="async" />
+          <figcaption>
+            <span>Sampaio</span>
+            <strong>Motorista particular em Fortaleza e região.</strong>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

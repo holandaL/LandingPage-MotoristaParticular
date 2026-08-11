@@ -1,5 +1,6 @@
 import { ChevronRight, MessageCircle, Navigation, Star } from 'lucide-react';
 import heroCar from '@/assets/fiat-argo-hero-optimized.jpg';
+import sampaioPhoto from '@/assets/sampaio-driver.jpg';
 import { hasConfiguredWhatsapp } from '@/config/contact';
 import { useToast } from '@/hooks/useToast';
 import { buildIntroWhatsappMessage, createWhatsappUrl } from '@/utils/whatsapp';
@@ -72,7 +73,7 @@ export function Hero() {
           </div>
 
           <aside className="driver-card" aria-label="Informações do motorista">
-            <div className="driver-avatar">S</div>
+            <img src={sampaioPhoto} alt="Foto do motorista Sampaio" className="driver-photo" loading="eager" decoding="async" />
             <div>
               <p className="text-2xl font-black leading-6">Sampaio</p>
               <p className="mt-1 text-sm font-semibold text-[#5d8dff]">Motorista Particular</p>
